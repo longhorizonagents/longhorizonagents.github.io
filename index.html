@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WLHA — Workshop on Long-Horizon Agents · NeurIPS 2026</title>
+<meta name="description" content="A NeurIPS 2026 forum on agents that run for hours, not turns: context engineering, on-the-fly evolution, and safety under extended autonomy." />
+<meta property="og:title" content="Workshop on Long-Horizon Agents (WLHA) · NeurIPS 2026" />
+<meta property="og:description" content="Agents that run for hours, not turns — context management, evolution, and safe AI under extended autonomy." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top">
+      <span class="nav__mark">WLHA</span>
+      <span class="nav__sub">Long-Horizon Agents</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#topics">Topics</a>
+      <a href="#dates">Dates</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#committee">Committee</a>
+      <a href="#cfp" class="nav__cta">Call for Papers</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <p class="eyebrow reveal">A Proposed NeurIPS 2026 Workshop</p>
+      <h1 class="hero__title reveal" data-delay="1">Workshop on<br />Long-Horizon Agents</h1>
+      <p class="hero__subtitle reveal" data-delay="2">Context Management, Evolution &amp; Safe AI</p>
+      <p class="hero__tagline reveal" data-delay="3">
+        Agents that run for <em>hours</em>, not turns — <span class="hl">context engineering</span>,
+        <span class="hl">on-the-fly evolution</span>, and <span class="hl">safety under extended autonomy</span>.
+      </p>
+      <p class="hero__meta reveal" data-delay="4">NeurIPS&nbsp;2026 &nbsp;·&nbsp; One&nbsp;Day &nbsp;·&nbsp; Location&nbsp;TBA</p>
+      <div class="hero__cta reveal" data-delay="5">
+        <a class="btn btn--primary" href="#cfp">Call for Papers</a>
+        <a class="btn btn--ghost" href="#dates">Important Dates</a>
+      </div>
+    </div>
+    <div class="hero__horizon" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ OVERVIEW ============ -->
+  <section class="section" id="overview">
+    <div class="wrap">
+      <p class="kicker reveal"><span>01</span> Overview</p>
+      <h2 class="section__title reveal">Long-horizon performance is the new dominant axis.</h2>
+      <div class="prose reveal">
+        <p>
+          Frontier LLM-based agents — Claude&nbsp;Code, OpenAI&nbsp;Codex, OpenHands, SWE-agent, MetaGPT — are now
+          deployed on tasks that span <strong>hours of execution, hundreds of thousands of tokens, and dozens of
+          tool calls.</strong> Yet they degrade sharply as the horizon grows: effective context shrinks under noise,
+          agents cannot accumulate and reuse experience across sessions, and alignment guarantees that hold for
+          single-turn chat erode under extended autonomy.
+        </p>
+        <p>
+          Long-horizon performance now cuts across <em>capability, infrastructure, and safety</em> in a way no single
+          existing community addresses end-to-end. The <strong>1st Workshop on Long-Horizon Agents</strong> brings
+          together researchers from foundation-model training, reinforcement learning, agent systems, and AI safety
+          around three representative emphases.
+        </p>
+      </div>
+
+      <div class="triad reveal">
+        <article class="triad__card">
+          <span class="triad__idx">i</span>
+          <h3>Context Management</h3>
+          <p>Memory, retrieval, compression, and context engineering that keep agents coherent over millions of tokens.</p>
+        </article>
+        <article class="triad__card">
+          <span class="triad__idx">ii</span>
+          <h3>Agent Evolution</h3>
+          <p>Self-improvement, skill acquisition, lifelong learning, and online RL on agent traces.</p>
+        </article>
+        <article class="triad__card">
+          <span class="triad__idx">iii</span>
+          <h3>Safe AI</h3>
+          <p>Alignment, monitoring, control, and evaluation that remain reliable under unsupervised execution.</p>
+        </article>
+      </div>
+
+      <blockquote class="pullquote reveal">
+        To our knowledge, the only workshop positioning <em>long-horizon&nbsp;execution × context&nbsp;engineering ×
+        on-the-fly&nbsp;evolution × safety-under-extended-autonomy</em> as a single, inseparable intersection.
+      </blockquote>
+
+      <div class="whynow reveal">
+        <p class="kicker"><span>↗</span> Why now</p>
+        <p class="prose">
+          2025–2026 marked the transition of long-horizon agents from research demos to deployed products. METR reports
+          frontier-model capability doubling roughly every <strong>seven months</strong> on multi-hour tasks, and
+          benchmarks such as SWE-bench, GAIA, OSWorld, and RE-Bench have largely collapsed under agentic scaffolding.
+          A NeurIPS-level integrative venue is needed <em>now</em>, before the next generation of long-horizon agents
+          is re-invented in each silo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOPICS ============ -->
+  <section class="section section--tint" id="topics">
+    <div class="wrap">
+      <p class="kicker reveal"><span>02</span> Topics</p>
+      <h2 class="section__title reveal">What we invite.</h2>
+      <p class="prose prose--lead reveal">We welcome empirical, theoretical, systems, position, and survey papers across the long-horizon agent agenda. Suggested topics (non-exhaustive):</p>
+      <ol class="topics" id="topics-list">
+        <li class="topic reveal">
+          <span class="topic__num">01</span>
+          <div><h3>Context &amp; Memory</h3><p>Long-context architectures, retrieval-augmented agents, episodic / semantic memory, context compression and engineering, lost-in-the-middle mitigations, virtual-memory schemes.</p></div>
+        </li>
+        <li class="topic reveal">
+          <span class="topic__num">02</span>
+          <div><h3>Agent Evolution</h3><p>Self-improvement, lifelong learning, skill libraries, online RL on agent traces, recursive self-improvement, automatic workflow synthesis.</p></div>
+        </li>
+        <li class="topic reveal">
+          <span class="topic__num">03</span>
+          <div><h3>Long-Horizon Planning &amp; Reasoning</h3><p>Hierarchical decomposition, search and backtracking, plan repair, deliberate vs. reactive control, test-time compute scaling.</p></div>
+        </li>
+        <li class="topic reveal">
+          <span class="topic__num">04</span>
+          <div><h3>Multi-Agent Systems &amp; Orchestration</h3><p>Role specialization, communication protocols, optimizable agent graphs, debate, market and contract mechanisms.</p></div>
+        </li>
+        <li class="topic reveal">
+          <span class="topic__num">05</span>
+          <div><h3>Tool Use, Code &amp; Computer Use</h3><p>Robust tool calling, environment grounding, sandboxing, SWE and computer-use agents, scientific-discovery agents.</p></div>
+        </li>
+        <li class="topic reveal">
+          <span class="topic__num">06</span>
+          <div><h3>Evaluation &amp; Benchmarks</h3><p>Long-horizon and multi-day tasks, human-comparable horizon measurement, agent-as-judge, reproducibility and contamination, cost–latency–reliability frontiers.</p></div>
+        </li>
+        <li class="topic reveal">
+          <span class="topic__num">07</span>
+          <div><h3>Safety Under Extended Autonomy</h3><p>Reward hacking on long trajectories, scheming and deceptive alignment, AI control protocols, scalable oversight, runtime monitoring of agent traces.</p></div>
+        </li>
+        <li class="topic reveal">
+          <span class="topic__num">08</span>
+          <div><h3>Open Infrastructure</h3><p>Agent traces, harnesses, simulators, datasets, and open-source frameworks enabling reproducible long-horizon research.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ DATES ============ -->
+  <section class="section" id="dates">
+    <div class="wrap">
+      <p class="kicker reveal"><span>03</span> Important Dates</p>
+      <h2 class="section__title reveal">Timeline.</h2>
+      <p class="prose prose--lead reveal">Anchored on the mandatory NeurIPS notification deadline. All deadlines are end-of-day Anywhere&nbsp;on&nbsp;Earth&nbsp;(AoE).</p>
+      <ol class="timeline reveal">
+        <li class="tl"><span class="tl__date">Jul 18, 2026</span><span class="tl__dot"></span><span class="tl__label">OpenReview submission portal opens</span></li>
+        <li class="tl tl--mark"><span class="tl__date">Aug 29, 2026</span><span class="tl__dot"></span><span class="tl__label">Paper submission deadline <em>(AoE)</em></span></li>
+        <li class="tl"><span class="tl__date">Sep 22, 2026</span><span class="tl__dot"></span><span class="tl__label">Reviews due</span></li>
+        <li class="tl tl--mark"><span class="tl__date">Sep 28, 2026</span><span class="tl__dot"></span><span class="tl__label">Author notification</span></li>
+        <li class="tl"><span class="tl__date">Nov 15, 2026</span><span class="tl__dot"></span><span class="tl__label">Camera-ready, slides &amp; recordings due</span></li>
+        <li class="tl tl--final"><span class="tl__date">NeurIPS 2026</span><span class="tl__dot"></span><span class="tl__label">Workshop day — one full day</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SPEAKERS ============ -->
+  <section class="section section--tint" id="speakers">
+    <div class="wrap">
+      <p class="kicker reveal"><span>04</span> Invited Speakers</p>
+      <h2 class="section__title reveal">Six voices across the three emphases.</h2>
+      <p class="prose prose--lead reveal">Talks are requested specifically on long-horizon-agent topics, with no overlap with talks the same speakers may give at other 2026 workshops.</p>
+      <div class="people" id="speakers-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section class="section" id="schedule">
+    <div class="wrap">
+      <p class="kicker reveal"><span>05</span> Schedule</p>
+      <h2 class="section__title reveal">One full day, ~8.5 hours of content.</h2>
+      <p class="prose prose--lead reveal">A talks-and-posters program with a structured debate panel and a community breakout. Exact slots will track the conference's daily timetable.</p>
+
+      <div class="agenda reveal">
+        <div class="agenda__row"><span class="agenda__time">08:30</span><div class="agenda__body"><span class="agenda__title">Registration &amp; poster setup</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">09:00</span><div class="agenda__body"><span class="agenda__title">Opening remarks</span><span class="agenda__note">Scope, goals, code of conduct</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">09:10</span><div class="agenda__body"><span class="agenda__title">Keynote 1 — Baishakhi Ray</span><span class="agenda__note">Columbia University · confirmed</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">09:40</span><div class="agenda__body"><span class="agenda__title">Keynote 2 — Luyu Gao</span><span class="agenda__note">OpenAI · confirmed</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">10:10</span><div class="agenda__body"><span class="agenda__title">Contributed Oral Session 1</span><span class="agenda__note">3 × 10 min talks + Q&amp;A</span></div></div>
+        <div class="agenda__row agenda__row--break"><span class="agenda__time">10:45</span><div class="agenda__body"><span class="agenda__title">Coffee break</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">11:15</span><div class="agenda__body"><span class="agenda__title">Keynote 3 — Zifan Wang</span><span class="agenda__note">Meta MSL · confirmed</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">11:45</span><div class="agenda__body"><span class="agenda__title">Poster Session 1</span><span class="agenda__note">Early-stage &amp; short papers</span></div></div>
+        <div class="agenda__row agenda__row--break"><span class="agenda__time">12:30</span><div class="agenda__body"><span class="agenda__title">Lunch break</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">13:30</span><div class="agenda__body"><span class="agenda__title">Keynote 4 — Yixuan He</span><span class="agenda__note">Arizona State University · confirmed</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">14:00</span><div class="agenda__body"><span class="agenda__title">Keynote 5 — Yi Tay</span><span class="agenda__note">Google DeepMind · tentative</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">14:30</span><div class="agenda__body"><span class="agenda__title">Contributed Oral Session 2</span><span class="agenda__note">3 × 10 min talks + Q&amp;A</span></div></div>
+        <div class="agenda__row agenda__row--break"><span class="agenda__time">15:05</span><div class="agenda__body"><span class="agenda__title">Coffee break</span></div></div>
+        <div class="agenda__row agenda__row--feature"><span class="agenda__time">15:35</span><div class="agenda__body"><span class="agenda__title">Structured Debate Panel</span><span class="agenda__note">“Does scaling solve long-horizon agents, or do we need new memory, training &amp; oversight paradigms?” — moderator + 4 panelists</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">16:10</span><div class="agenda__body"><span class="agenda__title">Poster Session 2</span><span class="agenda__note">Long papers</span></div></div>
+        <div class="agenda__row agenda__row--feature"><span class="agenda__time">16:55</span><div class="agenda__body"><span class="agenda__title">Community Breakout</span><span class="agenda__note">Problem-definition tables: memory &amp; context · self-evolution · safe deployment · evaluation</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">17:25</span><div class="agenda__body"><span class="agenda__title">Best-paper announcement &amp; closing remarks</span></div></div>
+      </div>
+
+      <div class="formats reveal">
+        <div class="format"><h4>Talks &amp; Posters</h4><p>Two contributed oral sessions and two poster sessions surface results that hold in the long-horizon regime.</p></div>
+        <div class="format"><h4>Structured Debate</h4><p>Keynote speakers split pro / con on one sharp question, with the moderator enforcing concrete claims and concrete evidence.</p></div>
+        <div class="format"><h4>Community Breakout</h4><p>Small-group problem-definition tables whose outputs seed a <em>community problem document</em> published within two weeks.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMITTEE ============ -->
+  <section class="section section--tint" id="committee">
+    <div class="wrap">
+      <p class="kicker reveal"><span>06</span> Organizing Committee</p>
+      <h2 class="section__title reveal">Organizers.</h2>
+      <p class="prose prose--lead reveal">Six organizers spanning the UK, USA, Canada, Saudi Arabia, and China — across PhD students, applied scientists, and faculty — each anchoring an emphasis of the workshop.</p>
+      <div class="people" id="organizers-grid"></div>
+
+      <p class="kicker reveal" style="margin-top:5.5rem"><span>07</span> Advisory Board</p>
+      <h2 class="section__title reveal">Advisors.</h2>
+      <div class="people" id="advisors-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CALL FOR PAPERS ============ -->
+  <section class="section" id="cfp">
+    <div class="wrap">
+      <p class="kicker reveal"><span>08</span> Call for Papers</p>
+      <h2 class="section__title reveal">Submit your work.</h2>
+      <p class="prose prose--lead reveal">Two tracks in the NeurIPS 2026 proceedings format. The workshop is <strong>non-archival</strong>; accepted papers are posted on the workshop site.</p>
+
+      <div class="tracks reveal">
+        <article class="track">
+          <span class="track__tag">Track A</span>
+          <h3>Short paper</h3>
+          <p class="track__len">up to <strong>4 pages</strong> + references / appendix</p>
+          <p>For focused empirical results, position pieces, and early-stage ideas.</p>
+        </article>
+        <article class="track">
+          <span class="track__tag">Track B</span>
+          <h3>Long paper</h3>
+          <p class="track__len">up to <strong>8 pages</strong> + references / appendix</p>
+          <p>For complete studies, systems, surveys, and theoretical contributions.</p>
+        </article>
+      </div>
+
+      <div class="cfp-grid reveal">
+        <div class="cfp-item"><h4>Presentation</h4><p>All accepted papers are presented as posters; ~6 are selected for short oral talks and 1–2 for best-paper recognition.</p></div>
+        <div class="cfp-item"><h4>Reviewing</h4><p>OpenReview, 3 reviews per paper, double-blind, with a program committee sized to ≥3× expected submissions.</p></div>
+        <div class="cfp-item"><h4>Originality</h4><p>The CFP disallows work already published at NeurIPS / ICML / ICLR or other ML / NLP venues, and work concurrent with the main NeurIPS 2026 conference.</p></div>
+        <div class="cfp-item"><h4>Openness</h4><p>We encourage the release of code, data, traces, or harnesses. Best Paper &amp; Best Poster awards carry monetary prizes.</p></div>
+      </div>
+
+      <div class="cfp-cta reveal">
+        <a class="btn btn--primary" href="https://openreview.net/" target="_blank" rel="noopener">OpenReview →</a>
+        <span class="cfp-cta__note">Submission portal opens <strong>July 18, 2026</strong>.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPONSORS ============ -->
+  <section class="section section--tint" id="sponsors">
+    <div class="wrap wrap--narrow center">
+      <p class="kicker reveal center-k"><span>09</span> Supported By</p>
+      <div class="sponsor-logos reveal">
+        <span class="sponsor sponsor--lead">Ubiquant</span>
+        <span class="sponsor sponsor--muted">+ partners (tentative)</span>
+      </div>
+      <p class="prose reveal" style="margin-top:1.5rem">
+        Sponsorship funds three pillars — <strong>Diversity &amp; Inclusion financial aid</strong> (travel grants prioritized
+        for early-career researchers and attendees from low-income regions), <strong>academic awards</strong>, and
+        <strong>logistics &amp; operations</strong>.
+      </p>
+      <p class="fineprint reveal">Conflict-of-interest policy: sponsors have no involvement in peer review, paper selection, or award decisions.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="footer__mark">WLHA</span>
+      <p class="footer__tag">Workshop on Long-Horizon Agents — Context Management, Evolution &amp; Safe AI.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#overview">Overview</a>
+      <a href="#topics">Topics</a>
+      <a href="#dates">Dates</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#committee">Committee</a>
+      <a href="#cfp">Call for Papers</a>
+    </nav>
+  </div>
+  <div class="wrap footer__base">
+    <p>A proposed NeurIPS 2026 workshop. Program, dates &amp; speakers are tentative pending acceptance.</p>
+    <p>© 2026 WLHA Organizing Committee</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
