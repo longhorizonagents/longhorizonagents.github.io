@@ -17,7 +17,7 @@ const PEOPLE = {
     { name: 'Dingmin Wang',   aff: 'AWS AI Lab',                      area: 'Long-horizon code agents',                               photo: 'dingmin-wang',   home: 'https://www.dingmin.wang/' },
     { name: 'Yuxuan Zhang',   aff: 'Univ. of British Columbia',       area: 'AI agents · ClawBench · deep-research agents',           photo: 'yuxuan-zhang',   home: 'https://yuxuan.world/' },
     { name: 'Mingchen Zhuge', aff: 'KAUST',                           area: 'Agent frameworks: MetaGPT, GPTSwarm, AFlow',             photo: 'mingchen-zhuge', home: 'https://mczhuge.github.io/' },
-    { name: 'Jian Yang',      aff: 'Beihang University (BUAA)',       area: 'Qwen-Coder · multi-agent systems',                       photo: 'jian-yang',      home: 'https://csjianyang.github.io/' },
+    { name: 'Jian Yang',      aff: '',                                area: 'Qwen-Coder · multi-agent systems',                       photo: 'jian-yang',      home: 'https://csjianyang.github.io/' },
     { name: 'Hanqi Yan',      aff: "King's College London",          area: 'CoT compression · agentic evaluation & safety',          photo: 'hanqi-yan',      home: 'https://hanqi-qi.github.io/' },
   ],
   advisors: [
@@ -44,11 +44,13 @@ function personCard(p) {
   const nameEl = p.home
     ? `<a class="card__name" href="${p.home}" target="_blank" rel="noopener">${p.name}<span class="card__arrow">↗</span></a>`
     : `<span class="card__name">${p.name}</span>`;
+  const aff = p.aff ? `<p class="card__aff">${p.aff}</p>` : '';
+  const area = p.area ? `<p class="card__area">${p.area}</p>` : '';
   return `<article class="card">
     <div class="card__media">${avatar}${tag}</div>
     ${nameEl}
-    <p class="card__aff">${p.aff}</p>
-    <p class="card__area">${p.area}</p>
+    ${aff}
+    ${area}
   </article>`;
 }
 
