@@ -10,7 +10,6 @@ const PEOPLE = {
     { name: 'Zifan Wang',     aff: 'Meta Superintelligence Labs',     area: 'Safety & red-teaming for autonomous LM systems',         photo: 'zifan-wang',     home: 'https://zifanw.notion.site/',     tag: 'confirmed' },
     { name: 'Yixuan He',      aff: 'Arizona State University',        area: 'Structured reasoning · graph-based agents',              photo: 'yixuan-he',      home: 'https://sherylhyx.github.io/',    tag: 'confirmed' },
     { name: 'Yilun Du',       aff: 'Harvard · Kempner Institute',     area: 'World models · compositional planning · test-time search', photo: 'yilun-du',     home: 'https://yilundu.github.io/',      tag: 'confirmed' },
-    { name: 'Yi Tay',         aff: 'Google DeepMind',                 area: 'Long-context modeling · training paradigms',             photo: 'yi-tay',         home: 'https://www.yitay.net/',          tag: 'tentative' },
   ],
   organizers: [
     { name: 'Yizhi Li',       aff: 'Univ. of Manchester · IQuest',    area: 'Code-LLM agents · RL for LLMs · open evaluation',        photo: 'yizhi-li',       home: 'https://yizhilll.github.io/' },
