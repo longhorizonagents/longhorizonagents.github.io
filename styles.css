@@ -274,9 +274,9 @@ strong { font-weight: 600; color: var(--head); }
 .cfp-cta__note { font-family: var(--mono); font-size: .82rem; letter-spacing: .04em; color: var(--muted); }
 
 /* ---- sponsors ---- */
-.sponsor-logos { display: flex; align-items: baseline; justify-content: center; gap: 1.4rem; flex-wrap: wrap; margin-top: 2.4rem; }
-.sponsor--lead { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); color: var(--head); letter-spacing: .01em; }
-.sponsor--muted { font-family: var(--mono); font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; color: var(--soft); }
+.sponsor-logos { display: flex; align-items: center; justify-content: center; gap: clamp(1.4rem, 4vw, 3rem); flex-wrap: wrap; margin-top: 2.4rem; }
+.sponsor { font-family: var(--serif); font-size: clamp(1.7rem, 3.4vw, 2.7rem); color: var(--head); letter-spacing: .01em; line-height: 1; }
+.sponsor-div { width: 1px; height: 1.5em; background: var(--line); }
 .sponsors #x, .fineprint { font-family: var(--mono); font-size: .76rem; letter-spacing: .06em; color: var(--soft); margin-top: 2rem; }
 #sponsors .prose { margin-inline: auto; }
 
