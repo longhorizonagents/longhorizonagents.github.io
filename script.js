@@ -5,11 +5,11 @@ document.documentElement.classList.add('js');
 
 const PEOPLE = {
   speakers: [
-    { name: 'Baishakhi Ray',  aff: 'Columbia University',            area: 'Code agents · SWE benchmarking',                        photo: 'baishakhi-ray',  home: 'https://www.rayb.info/',          tag: 'confirmed' },
-    { name: 'Luyu Gao',       aff: 'OpenAI',                          area: 'Retrieval · tool use · agent context',                   photo: 'luyu-gao',       home: 'https://luyug.github.io/',        tag: 'confirmed' },
-    { name: 'Zifan Wang',     aff: 'Meta Superintelligence Labs',     area: 'Safety & red-teaming for autonomous LM systems',         photo: 'zifan-wang',     home: 'https://zifanw.notion.site/',     tag: 'confirmed' },
-    { name: 'Yixuan He',      aff: 'Arizona State University',        area: 'Structured reasoning · graph-based agents',              photo: 'yixuan-he',      home: 'https://sherylhyx.github.io/',    tag: 'confirmed' },
-    { name: 'Yilun Du',       aff: 'Harvard · Kempner Institute',     area: 'World models · compositional planning · test-time search', photo: 'yilun-du',     home: 'https://yilundu.github.io/',      tag: 'confirmed' },
+    { name: 'Baishakhi Ray',  aff: 'Columbia University',            area: 'Code agents · SWE benchmarking',                        photo: 'baishakhi-ray',  home: 'https://www.rayb.info/' },
+    { name: 'Luyu Gao',       aff: 'OpenAI',                          area: 'Retrieval · tool use · agent context',                   photo: 'luyu-gao',       home: 'https://luyug.github.io/' },
+    { name: 'Zifan Wang',     aff: 'Meta Superintelligence Labs',     area: 'Safety & red-teaming for autonomous LM systems',         photo: 'zifan-wang',     home: 'https://zifanw.notion.site/' },
+    { name: 'Yixuan He',      aff: 'Arizona State University',        area: 'Structured reasoning · graph-based agents',              photo: 'yixuan-he',      home: 'https://sherylhyx.github.io/' },
+    { name: 'Yilun Du',       aff: 'Harvard · Kempner Institute',     area: 'World models · compositional planning · test-time search', photo: 'yilun-du',       home: 'https://yilundu.github.io/' },
   ],
   organizers: [
     { name: 'Yizhi Li',       aff: 'Univ. of Manchester · IQuest',    area: 'Code-LLM agents · RL for LLMs · open evaluation',        photo: 'yizhi-li',       home: 'https://yizhilll.github.io/' },
@@ -37,16 +37,13 @@ function personCard(p) {
   const avatar = p.photo
     ? `<img class="card__photo" src="assets/people/${p.photo}.jpg" alt="${p.name}" loading="lazy" width="200" height="200" />`
     : `<span class="card__photo card__photo--mono" aria-hidden="true">${initials(p.name)}</span>`;
-  const tag = p.tag
-    ? `<span class="card__tag card__tag--${p.tag}">${p.tag}</span>`
-    : '';
   const nameEl = p.home
     ? `<a class="card__name" href="${p.home}" target="_blank" rel="noopener">${p.name}<span class="card__arrow">↗</span></a>`
     : `<span class="card__name">${p.name}</span>`;
   const aff = p.aff ? `<p class="card__aff">${p.aff}</p>` : '';
   const area = p.area ? `<p class="card__area">${p.area}</p>` : '';
   return `<article class="card">
-    <div class="card__media">${avatar}${tag}</div>
+    <div class="card__media">${avatar}</div>
     ${nameEl}
     ${aff}
     ${area}
