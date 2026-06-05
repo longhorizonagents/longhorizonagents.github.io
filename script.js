@@ -5,11 +5,12 @@ document.documentElement.classList.add('js');
 
 const PEOPLE = {
   speakers: [
-    { name: 'Baishakhi Ray',  aff: 'Columbia University',            area: 'Code agents · SWE benchmarking',                        photo: 'baishakhi-ray',  home: 'https://www.rayb.info/' },
-    { name: 'Luyu Gao',       aff: 'OpenAI',                          area: 'Retrieval · tool use · agent context',                   photo: 'luyu-gao',       home: 'https://luyug.github.io/' },
-    { name: 'Zifan Wang',     aff: 'Meta Superintelligence Labs',     area: 'Safety & red-teaming for autonomous LM systems',         photo: 'zifan-wang',     home: 'https://zifanw.notion.site/' },
-    { name: 'Yixuan He',      aff: 'Arizona State University',        area: 'Structured reasoning · graph-based agents',              photo: 'yixuan-he',      home: 'https://sherylhyx.github.io/' },
-    { name: 'Yilun Du',       aff: 'Harvard · Kempner Institute',     area: 'World models · compositional planning · test-time search', photo: 'yilun-du',       home: 'https://yilundu.github.io/' },
+    { name: 'Yilun Du',       aff: 'Assistant Professor, Harvard University',       photo: 'yilun-du',       home: 'https://yilundu.github.io/' },
+    { name: 'Zifan Wang',     aff: 'Meta, London',                                  photo: 'zifan-wang',     home: 'https://zifanw.notion.site/' },
+    { name: 'Baishakhi Ray',  aff: 'Associate Professor, Columbia University',      photo: 'baishakhi-ray',  home: 'https://www.rayb.info/' },
+    { name: 'Luyu Gao',       aff: 'OpenAI',                                        photo: 'luyu-gao',       home: 'https://luyug.github.io/' },
+    { name: 'Yixuan He',      aff: 'Assistant Professor, Arizona State University',  photo: 'yixuan-he',      home: 'https://sherylhyx.github.io/' },
+    { name: 'Bing Liu',       aff: 'Scale AI',                                      photo: 'bing-liu',       home: 'https://www.cs.uic.edu/~liub/' },
   ],
   organizers: [
     { name: 'Yizhi Li',       aff: 'Univ. of Manchester · IQuest',    area: 'Code-LLM agents · RL for LLMs · open evaluation',        photo: 'yizhi-li',       home: 'https://yizhilll.github.io/' },
