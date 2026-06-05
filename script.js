@@ -23,7 +23,7 @@ const PEOPLE = {
   advisors: [
     { name: 'Wenhu Chen',     aff: 'Meta MSL · Univ. of Waterloo',    area: 'Multimodal pre-training & evaluation',                   photo: 'wenhu-chen',     home: 'https://wenhuchen.github.io/' },
     { name: 'Qian Liu',       aff: 'xAI',                             area: 'LLMs · code intelligence (StarCoder, OpenCoder)',        photo: 'qian-liu',       home: 'https://siviltaram.github.io/' },
-    { name: 'Ping Nie',       aff: 'Univ. of Waterloo',               area: 'Scaling agents · web-search agents',                     photo: null,             home: 'https://github.com/erenup' },
+    { name: 'Ping Nie',       aff: 'Univ. of Waterloo',               area: 'Scaling agents · web-search agents',                     photo: 'ping-nie',       home: 'https://github.com/erenup' },
     { name: 'Peter West',     aff: 'Univ. of British Columbia',       area: 'NLP · capabilities & limits of LLMs',                    photo: 'peter-west',     home: 'https://www.cs.ubc.ca/people/peter-west' },
     { name: 'Ge Zhang',       aff: 'ByteDance Seed · M-A-P',          area: 'Synthetic data & evaluation · pretraining',              photo: 'ge-zhang',       home: 'https://scholar.google.com/citations?user=qyTrq4kAAAAJ' },
     { name: 'Pan Lu',         aff: 'Stanford University',             area: 'Multimodal & mathematical reasoning · tool-augmented agents', photo: 'pan-lu',     home: 'https://lupantech.github.io/' },
