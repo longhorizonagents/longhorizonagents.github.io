@@ -15,7 +15,7 @@ const PEOPLE = {
     { name: 'Yizhi Li',       aff: 'Univ. of Manchester · IQuest',    area: 'Code-LLM agents · RL for LLMs · open evaluation',        photo: 'yizhi-li',       home: 'https://yizhilll.github.io/' },
     { name: 'Dingmin Wang',   aff: 'AWS AI Lab',                      area: 'Long-horizon code agents',                               photo: 'dingmin-wang',   home: 'https://www.dingmin.wang/' },
     { name: 'Yuxuan Zhang',   aff: 'Univ. of British Columbia',       area: 'AI agents · ClawBench · deep-research agents',           photo: 'yuxuan-zhang',   home: 'https://yuxuan.world/' },
-    { name: 'Mingchen Zhuge', aff: 'KAUST',                           area: 'Agent frameworks: MetaGPT, GPTSwarm, AFlow',             photo: 'mingchen-zhuge', home: 'https://mczhuge.github.io/' },
+    { name: 'Mingchen Zhuge', aff: 'Recursive',                       area: 'Agent frameworks: MetaGPT, GPTSwarm, AFlow',             photo: 'mingchen-zhuge', home: 'https://metauto.ai/' },
     { name: 'Jian Yang',      aff: '',                                area: 'Qwen-Coder · multi-agent systems',                       photo: 'jian-yang',      home: 'https://csjianyang.github.io/' },
     { name: 'Hanqi Yan',      aff: "King's College London",          area: 'CoT compression · agentic evaluation & safety',          photo: 'hanqi-yan',      home: 'https://hanqi-qi.github.io/' },
   ],
