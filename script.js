@@ -8,17 +8,19 @@ const PEOPLE = {
     { name: 'Yilun Du',       aff: 'Assistant Professor, Harvard University',       photo: 'yilun-du',       home: 'https://yilundu.github.io/' },
     { name: 'Zifan Wang',     aff: 'Meta, London',                                  photo: 'zifan-wang',     home: 'https://zifanw.notion.site/' },
     { name: 'Baishakhi Ray',  aff: 'Associate Professor, Columbia University',      photo: 'baishakhi-ray',  home: 'https://www.rayb.info/' },
+    { name: 'James Zou',      aff: 'Associate Professor, Stanford University',      photo: 'james-zou',      home: 'https://www.james-zou.com/' },
     { name: 'Luyu Gao',       aff: 'OpenAI',                                        photo: 'luyu-gao',       home: 'https://luyug.github.io/' },
     { name: 'Yixuan He',      aff: 'Assistant Professor, Arizona State University',  photo: 'yixuan-he',      home: 'https://sherylhyx.github.io/' },
-    { name: 'Bing Liu',       aff: 'Scale AI',                                      photo: 'bing-liu',       home: 'https://www.cs.uic.edu/~liub/' },
+    { name: 'Bing Liu',       aff: 'Scale AI',                                      photo: 'bing-liu',       home: 'https://bingliu.me/' },
   ],
   organizers: [
     { name: 'Yizhi Li',       aff: 'Univ. of Manchester · IQuest',    area: 'Code-LLM agents · RL for LLMs · open evaluation',        photo: 'yizhi-li',       home: 'https://yizhilll.github.io/' },
     { name: 'Dingmin Wang',   aff: 'AWS AI Lab',                      area: 'Long-horizon code agents',                               photo: 'dingmin-wang',   home: 'https://www.dingmin.wang/' },
     { name: 'Yuxuan Zhang',   aff: 'Univ. of British Columbia',       area: 'AI agents · ClawBench · deep-research agents',           photo: 'yuxuan-zhang',   home: 'https://yuxuan.world/' },
-    { name: 'Mingchen Zhuge', aff: 'Recursive',                       area: 'Code generation: MetaGPT, GPTSwarm, OpenHands, agent-as-a-judge, Neural Computers', photo: 'mingchen-zhuge', home: 'https://metauto.ai/' },
+    { name: 'Mingchen Zhuge', aff: 'Recursive',                       area: 'Code generation: MetaGPT, GPTSwarm, agent-as-a-judge, Neural Computers', photo: 'mingchen-zhuge', home: 'https://metauto.ai/' },
     { name: 'Jian Yang',      aff: '',                                area: 'Qwen-Coder · multi-agent systems',                       photo: 'jian-yang',      home: 'https://csjianyang.github.io/' },
     { name: 'Hanqi Yan',      aff: "King's College London",          area: 'CoT compression · agentic evaluation & safety',          photo: 'hanqi-yan',      home: 'https://hanqi-qi.github.io/' },
+    { name: 'Zhuofeng Li',    aff: 'Texas A&M · Stanford (visiting)', area: 'Post-training · RL infrastructure · agent evaluation',    photo: 'zhuofeng-li',    home: 'https://zhuofeng-li.github.io/' },
   ],
   advisors: [
     { name: 'Wenhu Chen',     aff: 'Meta MSL · Univ. of Waterloo',    area: 'Multimodal pre-training & evaluation',                   photo: 'wenhu-chen',     home: 'https://wenhuchen.github.io/' },
@@ -27,6 +29,10 @@ const PEOPLE = {
     { name: 'Peter West',     aff: 'Univ. of British Columbia',       area: 'NLP · capabilities & limits of LLMs',                    photo: 'peter-west',     home: 'https://www.cs.ubc.ca/people/peter-west' },
     { name: 'Ge Zhang',       aff: 'ByteDance Seed · M-A-P',          area: 'Synthetic data & evaluation · pretraining',              photo: 'ge-zhang',       home: 'https://scholar.google.com/citations?user=qyTrq4kAAAAJ' },
     { name: 'Pan Lu',         aff: 'Stanford University',             area: 'Multimodal & mathematical reasoning · tool-augmented agents', photo: 'pan-lu',     home: 'https://lupantech.github.io/' },
+    { name: 'Hanrong Ye',     aff: 'NVIDIA',                          area: 'Omni-modal LLMs · agentic intelligence',                 photo: 'hanrong-ye',     home: 'https://sites.google.com/site/yhrspace/' },
+    { name: 'Xin Liu',        aff: 'Amazon',                          area: 'Pre-training & post-training generalization',            photo: 'xin-liu',        home: 'https://seanliu96.github.io/' },
+    { name: 'Greg Durrett',   aff: 'New York University',             area: 'NLP · reasoning, verification & evaluation',             photo: 'greg-durrett',   home: 'https://gregdurrett.github.io/' },
+    { name: 'Jianwen Xie',    aff: 'Lambda',                          area: 'Generative modeling · VLMs · AI for science',            photo: 'jianwen-xie',    home: 'http://www.stat.ucla.edu/~jxie/' },
   ],
 };
 

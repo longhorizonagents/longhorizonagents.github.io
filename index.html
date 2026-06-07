@@ -4,15 +4,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>WLHA — Workshop on Long-Horizon Agents · NeurIPS 2026</title>
-<meta name="description" content="A NeurIPS 2026 forum on agents that run for hours, not turns: context engineering, on-the-fly evolution, and safety under extended autonomy." />
+<meta name="description" content="A NeurIPS 2026 workshop on agents for days-long tasks: context, interaction, reflection, and evaluation for verifiable deliverables." />
 <meta property="og:title" content="Workshop on Long-Horizon Agents (WLHA) · NeurIPS 2026" />
-<meta property="og:description" content="Agents that run for hours, not turns — context management, evolution, and safe AI under extended autonomy." />
+<meta property="og:description" content="Agents for days-long tasks — efficient context, interaction, reflection, and evaluation for verifiable deliverables." />
 <meta property="og:type" content="website" />
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=11" />
+<link rel="stylesheet" href="styles.css?v=12" />
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
@@ -46,10 +46,10 @@
     <div class="wrap hero__inner">
       <p class="eyebrow reveal">A Proposed NeurIPS 2026 Workshop</p>
       <h1 class="hero__title reveal" data-delay="1">Workshop on<br />Long-Horizon Agents</h1>
-      <p class="hero__subtitle reveal" data-delay="2">Context Management, Evolution &amp; Safe AI</p>
+      <p class="hero__subtitle reveal" data-delay="2">Tackling Days-Long Tasks via Context, Interaction &amp; Reflection</p>
       <p class="hero__tagline reveal" data-delay="3">
-        Agents that run for <em>hours</em>, not turns — <span class="hl">context engineering</span>,
-        <span class="hl">on-the-fly evolution</span>, and <span class="hl">safety under extended autonomy</span>.
+        Agents for tasks that run for <em>days</em>, not turns — efficient <span class="hl">context</span>,
+        <span class="hl">interaction</span>, and <span class="hl">reflection</span> for verifiable deliverables.
       </p>
       <p class="hero__meta reveal" data-delay="4">NeurIPS&nbsp;2026 &nbsp;·&nbsp; One&nbsp;Day &nbsp;·&nbsp; Location&nbsp;TBA</p>
       <div class="hero__cta reveal" data-delay="5">
@@ -64,37 +64,42 @@
   <section class="section" id="overview">
     <div class="wrap wrap--read">
       <p class="kicker reveal">Overview</p>
-      <h2 class="section__title reveal">Long-horizon performance is the new dominant axis.</h2>
+      <h2 class="section__title reveal">Long-horizon execution is the axis agents are now judged on.</h2>
       <div class="prose reveal">
         <p>
-          Frontier LLM-based agents — Claude&nbsp;Code, OpenAI&nbsp;Codex, OpenHands, SWE-agent, MetaGPT — are now
-          deployed on tasks that span hours of execution, hundreds of thousands of tokens, and dozens of tool calls.
-          Yet they degrade sharply as the horizon grows: effective context shrinks under noise, agents cannot
-          accumulate and reuse experience across sessions, and alignment guarantees that hold for single-turn chat
-          erode under extended autonomy.
+          Frontier LLM-based agents — Claude&nbsp;Code, OpenAI&nbsp;Codex, OpenHands, SWE-agent, MetaGPT — are moving from
+          short conversations to bounded tasks that occupy <strong>hours or days</strong>: maintaining a codebase,
+          conducting a literature review, running experiments, auditing a system, or coordinating a multi-step workflow.
+          These are single extended episodes with a concrete goal, evolving intermediate artifacts, many tool calls,
+          occasional human input, and a final deliverable that must be accepted or rejected.
         </p>
         <p>
           The <strong>1st Workshop on Long-Horizon Agents</strong> treats this as one inseparable problem rather than
-          separate silos, around three emphases: <strong>Context Management</strong> — memory, retrieval, compression,
-          and context engineering that keep agents coherent over millions of tokens; <strong>Agent Evolution</strong> —
-          self-improvement, skill acquisition, lifelong learning, and online RL on agent traces; and
-          <strong>Safe&nbsp;AI</strong> — alignment, monitoring, control, and evaluation that remain reliable under
-          unsupervised execution.
+          separate silos, around three coupled emphases: <strong>Context</strong> — working memory, retrieval,
+          compression, artifact tracking, checkpointing, and context engineering that preserve task state over long
+          trajectories; <strong>Interaction</strong> — human-in-the-loop clarification, tool use, environment
+          interaction, agent–agent communication, interruption, handoff, and recovery; and
+          <strong>Reflection&nbsp;&amp;&nbsp;Evaluation</strong> — milestone verification, trajectory auditing,
+          agent-as-judge, process supervision, self-repair, and reward densification when the success signal is sparse.
+          Across all three runs a focus on <strong>cost efficiency</strong> — trading off accuracy, latency, token
+          budget, tool cost, and human supervision.
         </p>
       </div>
 
       <blockquote class="pullquote reveal">
-        To our knowledge, the only workshop positioning <em>long-horizon&nbsp;execution × context&nbsp;engineering ×
-        on-the-fly&nbsp;evolution × safety-under-extended-autonomy</em> as a single, inseparable intersection.
+        To our knowledge, the only workshop positioning <em>bounded long-horizon task execution × context ×
+        interaction × reflection/evaluation × cost efficiency</em> as a single agenda.
       </blockquote>
 
       <div class="prose reveal">
         <p>
           <strong>Why now.</strong> 2025–2026 marked the transition of long-horizon agents from research demos to
           deployed products. METR reports frontier-model capability doubling roughly every seven months on multi-hour
-          tasks, and benchmarks such as SWE-bench, GAIA, OSWorld, and RE-Bench have largely collapsed under agentic
-          scaffolding. A NeurIPS-level integrative venue is needed <em>now</em>, before the next generation of
-          long-horizon agents is re-invented in each silo.
+          tasks, and newer benchmarks — ProgramBench, NL2Repo-Bench, Terminal-Bench, ClawBench, APEX-Agents, SkillsBench
+          — push toward sustained, days-long execution. Yet evaluation still tends to score final answers and short
+          rollouts, leaving open what should be remembered, when an agent should ask for help, how intermediate progress
+          should be judged, and how cost should be reported. A NeurIPS-level integrative venue is needed <em>now</em>,
+          before long-horizon agents are compared with incompatible private traces and cost claims.
         </p>
       </div>
     </div>
@@ -131,25 +136,27 @@
     <div class="wrap">
       <p class="kicker reveal">Schedule</p>
       <h2 class="section__title reveal">One full day, ~8.5 hours.</h2>
-      <p class="prose reveal">Beyond two contributed oral sessions and two poster sessions, the program includes a <strong>structured debate panel</strong> — keynote speakers split pro/con on whether scaling alone solves long-horizon agents — and a <strong>community breakout</strong> whose problem-definition tables seed a community problem document published within two weeks. Exact slots track the conference timetable.</p>
+      <p class="prose reveal">Beyond two contributed oral sessions and two poster sessions, the program includes a <strong>structured debate panel</strong> on whether reliable days-long agents require explicit context, interaction, and verification protocols, and a <strong>community breakout</strong> whose tables — on context, interaction, reflection/evaluation, and cost efficiency — seed a community problem document published within two weeks. Exact slots track the conference timetable.</p>
 
       <div class="agenda reveal">
         <div class="agenda__row"><span class="agenda__time">08:30</span><div class="agenda__body"><span class="agenda__title">Registration &amp; poster setup</span></div></div>
         <div class="agenda__row"><span class="agenda__time">09:00</span><div class="agenda__body"><span class="agenda__title">Opening remarks</span><span class="agenda__note">Scope, goals, code of conduct</span></div></div>
         <div class="agenda__row agenda__row--key"><span class="agenda__time">09:10</span><div class="agenda__body"><span class="agenda__title">Keynote 1 — Baishakhi Ray</span><span class="agenda__note">Columbia University</span></div></div>
-        <div class="agenda__row agenda__row--key"><span class="agenda__time">09:40</span><div class="agenda__body"><span class="agenda__title">Keynote 2 — Luyu Gao</span><span class="agenda__note">OpenAI</span></div></div>
-        <div class="agenda__row"><span class="agenda__time">10:10</span><div class="agenda__body"><span class="agenda__title">Contributed Oral Session 1</span><span class="agenda__note">3 × 10 min talks + Q&amp;A</span></div></div>
-        <div class="agenda__row agenda__row--break"><span class="agenda__time">10:45</span><div class="agenda__body"><span class="agenda__title">Coffee break</span></div></div>
-        <div class="agenda__row agenda__row--key"><span class="agenda__time">11:15</span><div class="agenda__body"><span class="agenda__title">Keynote 3 — Zifan Wang</span><span class="agenda__note">Meta</span></div></div>
-        <div class="agenda__row"><span class="agenda__time">11:45</span><div class="agenda__body"><span class="agenda__title">Poster Session 1</span><span class="agenda__note">Early-stage &amp; short papers</span></div></div>
-        <div class="agenda__row agenda__row--break"><span class="agenda__time">12:30</span><div class="agenda__body"><span class="agenda__title">Lunch break</span></div></div>
-        <div class="agenda__row agenda__row--key"><span class="agenda__time">13:30</span><div class="agenda__body"><span class="agenda__title">Keynote 4 — Yixuan He</span><span class="agenda__note">Arizona State University</span></div></div>
-        <div class="agenda__row agenda__row--key"><span class="agenda__time">14:00</span><div class="agenda__body"><span class="agenda__title">Keynote 5 — Bing Liu</span><span class="agenda__note">Scale AI</span></div></div>
-        <div class="agenda__row"><span class="agenda__time">14:30</span><div class="agenda__body"><span class="agenda__title">Contributed Oral Session 2</span><span class="agenda__note">3 × 10 min talks + Q&amp;A</span></div></div>
-        <div class="agenda__row agenda__row--break"><span class="agenda__time">15:05</span><div class="agenda__body"><span class="agenda__title">Coffee break</span></div></div>
-        <div class="agenda__row agenda__row--feature"><span class="agenda__time">15:35</span><div class="agenda__body"><span class="agenda__title">Structured Debate Panel</span><span class="agenda__note">“Does scaling solve long-horizon agents, or do we need new memory, training &amp; oversight paradigms?”</span></div></div>
-        <div class="agenda__row"><span class="agenda__time">16:10</span><div class="agenda__body"><span class="agenda__title">Poster Session 2</span><span class="agenda__note">Long papers</span></div></div>
-        <div class="agenda__row agenda__row--feature"><span class="agenda__time">16:55</span><div class="agenda__body"><span class="agenda__title">Community Breakout</span><span class="agenda__note">Problem-definition tables → community problem document</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">09:40</span><div class="agenda__body"><span class="agenda__title">Keynote 2 — James Zou</span><span class="agenda__note">Stanford University</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">10:10</span><div class="agenda__body"><span class="agenda__title">Keynote 3 — Luyu Gao</span><span class="agenda__note">OpenAI</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">10:40</span><div class="agenda__body"><span class="agenda__title">Contributed Oral Session 1</span><span class="agenda__note">3 × 10 min talks + Q&amp;A</span></div></div>
+        <div class="agenda__row agenda__row--break"><span class="agenda__time">11:05</span><div class="agenda__body"><span class="agenda__title">Coffee break</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">11:25</span><div class="agenda__body"><span class="agenda__title">Keynote 4 — Zifan Wang</span><span class="agenda__note">Meta MSL</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">11:55</span><div class="agenda__body"><span class="agenda__title">Poster Session 1</span><span class="agenda__note">Early-stage &amp; short papers</span></div></div>
+        <div class="agenda__row agenda__row--break"><span class="agenda__time">12:40</span><div class="agenda__body"><span class="agenda__title">Lunch break</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">13:40</span><div class="agenda__body"><span class="agenda__title">Keynote 5 — Yixuan He</span><span class="agenda__note">Arizona State University</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">14:10</span><div class="agenda__body"><span class="agenda__title">Keynote 6 — Bing Liu</span><span class="agenda__note">Scale AI</span></div></div>
+        <div class="agenda__row agenda__row--key"><span class="agenda__time">14:40</span><div class="agenda__body"><span class="agenda__title">Keynote 7 — Yilun Du</span><span class="agenda__note">Harvard University</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">15:10</span><div class="agenda__body"><span class="agenda__title">Contributed Oral Session 2</span><span class="agenda__note">3 × 10 min talks + Q&amp;A</span></div></div>
+        <div class="agenda__row agenda__row--break"><span class="agenda__time">15:35</span><div class="agenda__body"><span class="agenda__title">Coffee break</span></div></div>
+        <div class="agenda__row agenda__row--feature"><span class="agenda__time">15:50</span><div class="agenda__body"><span class="agenda__title">Structured Debate Panel</span><span class="agenda__note">“Do reliable days-long agents need explicit context, interaction &amp; verification protocols — or does scaling suffice?”</span></div></div>
+        <div class="agenda__row"><span class="agenda__time">16:25</span><div class="agenda__body"><span class="agenda__title">Poster Session 2</span><span class="agenda__note">Long papers</span></div></div>
+        <div class="agenda__row agenda__row--feature"><span class="agenda__time">16:55</span><div class="agenda__body"><span class="agenda__title">Community Breakout</span><span class="agenda__note">Tables on context · interaction · reflection/evaluation · cost efficiency → community problem document</span></div></div>
         <div class="agenda__row agenda__row--key"><span class="agenda__time">17:25</span><div class="agenda__body"><span class="agenda__title">Best-paper announcement &amp; closing remarks</span></div></div>
       </div>
     </div>
@@ -175,16 +182,21 @@
       <h2 class="section__title reveal">Submit your work.</h2>
       <div class="prose reveal">
         <p>
-          We invite empirical, theoretical, systems, position, and survey papers across context &amp; memory, agent
-          evolution, long-horizon planning &amp; reasoning, multi-agent orchestration, tool/code/computer use,
-          evaluation &amp; benchmarks, safety under extended autonomy, and open infrastructure.
+          We invite empirical, theoretical, systems, position, and survey papers across
+          <strong>context for task state</strong> (working / artifact memory, retrieval, compression, checkpointing),
+          <strong>interaction during execution</strong> (human clarification, interrupt protocols, tool / API use, agent
+          delegation, recovery), <strong>reflection, verification &amp; evaluation</strong> (milestone design, dense
+          rewards, process supervision, agent-as-judge, trajectory auditing), <strong>planning, control &amp; cost</strong>
+          (decomposition, plan repair, latency–cost–reliability tradeoffs), and <strong>domains, safety &amp;
+          infrastructure</strong> (SWE / code, web, scientific, enterprise, embodied agents; trace monitors, datasets,
+          harnesses, verifiers).
         </p>
         <p>
-          Two tracks in the NeurIPS&nbsp;2026 format — <strong>short</strong> (up to 4 pages) and <strong>long</strong>
-          (up to 8 pages), plus references and appendix. The workshop is <strong>non-archival</strong>; all accepted
-          papers are presented as posters, with ~6 selected for short oral talks and 1–2 for best-paper recognition.
-          Reviewing is on OpenReview with three reviews per paper; we disallow work already published at or concurrent
-          with major ML/NLP venues, and encourage releasing code, data, traces, and harnesses.
+          Two non-archival tracks in the NeurIPS&nbsp;2026 format — <strong>short</strong> (up to 4 pages) and
+          <strong>long</strong> (up to 8 pages), plus references and appendix. All accepted papers are presented as
+          posters, with ~6 selected for short oral talks and 1–2 for best-paper recognition. Reviewing is on OpenReview
+          with three reviews per paper; we disallow work already published at or concurrent with major ML/NLP venues,
+          and encourage releasing code, data, traces, and harnesses.
         </p>
       </div>
       <div class="cfp-cta reveal">
@@ -220,7 +232,7 @@
   <div class="wrap footer__inner">
     <div class="footer__brand">
       <span class="footer__mark">WLHA</span>
-      <p class="footer__tag">Workshop on Long-Horizon Agents — Context Management, Evolution &amp; Safe AI.</p>
+      <p class="footer__tag">Workshop on Long-Horizon Agents — tackling days-long tasks via context, interaction &amp; reflection.</p>
     </div>
     <nav class="footer__nav" aria-label="Footer">
       <a href="#overview">Overview</a>
@@ -237,6 +249,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=11"></script>
+<script src="script.js?v=12"></script>
 </body>
 </html>
