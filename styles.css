@@ -341,3 +341,10 @@ html.js .reveal.in { opacity: 1; transform: none; }
   * { animation: none !important; scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* ---------------- EPIGRAPH ---------------- */
+.epigraph { position: relative; max-width: 60ch; margin: 0 0 2.8rem; padding-left: 2.1rem; }
+.epigraph::before { content: '\201C'; position: absolute; left: -.2rem; top: -.7rem; font-family: var(--serif); font-size: 4rem; line-height: 1; color: var(--coral); opacity: .45; }
+.epigraph p { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.45; color: var(--head); margin: 0; }
+.epigraph cite { display: block; margin-top: 1rem; font-family: var(--mono); font-style: normal; font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
+.epigraph cite b { color: var(--coral-deep); font-weight: 600; }
