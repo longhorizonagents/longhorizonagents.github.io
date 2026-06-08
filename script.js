@@ -12,6 +12,7 @@ const PEOPLE = {
     { name: 'Luyu Gao',       aff: 'OpenAI',                                        photo: 'luyu-gao',       home: 'https://luyug.github.io/' },
     { name: 'Yixuan He',      aff: 'Assistant Professor, Arizona State University',  photo: 'yixuan-he',      home: 'https://sherylhyx.github.io/' },
     { name: 'Bing Liu',       aff: 'Scale AI',                                      photo: 'bing-liu',       home: 'https://bingliu.me/' },
+    { name: 'Yi Tay',         aff: 'Google DeepMind (tentative)',                   photo: 'yi-tay',         home: 'https://www.yitay.net/' },
   ],
   organizers: [
     { name: 'Yizhi Li',       aff: 'Univ. of Manchester · IQuest',    area: 'Code-LLM agents · RL for LLMs · open evaluation',        photo: 'yizhi-li',       home: 'https://yizhilll.github.io/' },
