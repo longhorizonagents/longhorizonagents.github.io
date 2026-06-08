@@ -19,7 +19,7 @@ const PEOPLE = {
     { name: 'Dingmin Wang',   aff: 'AWS AI Lab',                      area: 'Long-horizon code agents',                               photo: 'dingmin-wang',   home: 'https://www.dingmin.wang/' },
     { name: 'Yuxuan Zhang',   aff: 'Univ. of British Columbia',       area: 'AI agents · ClawBench · deep-research agents',           photo: 'yuxuan-zhang',   home: 'https://yuxuan.world/' },
     { name: 'Mingchen Zhuge', aff: 'Recursive',                       area: 'Code generation: MetaGPT, GPTSwarm, agent-as-a-judge, Neural Computers', photo: 'mingchen-zhuge', home: 'https://metauto.ai/' },
-    { name: 'Jian Yang',      aff: '',                                area: 'Qwen-Coder · multi-agent systems',                       photo: 'jian-yang',      home: 'https://csjianyang.github.io/' },
+    { name: 'Jian Yang',      aff: 'Beihang University',              area: 'LLMs & code: Qwen, Qwen2.5-Coder · evaluation: KOR-Bench, McEval', photo: 'jian-yang',      home: 'https://csjianyang.github.io/' },
     { name: 'Hanqi Yan',      aff: "King's College London",          area: 'CoT compression · agentic evaluation & safety',          photo: 'hanqi-yan',      home: 'https://hanqi-qi.github.io/' },
     { name: 'Zhuofeng Li',    aff: 'Texas A&amp;M · Stanford (visiting)', area: 'Post-training · RL infrastructure · agent evaluation',    photo: 'zhuofeng-li',    home: 'https://zhuofeng-li.github.io/' },
   ],
