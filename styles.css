@@ -9,7 +9,7 @@
   --head:      #0a0a0a;
   --text:      #1f1d1b;
   --muted:     #6c6864;
-  --soft:      #9a958f;
+  --soft:      #7c776f;
   --line:      rgba(12,10,8,.12);
   --line-soft: rgba(12,10,8,.07);
 
@@ -348,3 +348,8 @@ html.js .reveal.in { opacity: 1; transform: none; }
 .epigraph p { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.45; color: var(--head); margin: 0; }
 .epigraph cite { display: block; margin-top: 1rem; font-family: var(--mono); font-style: normal; font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
 .epigraph cite b { color: var(--coral-deep); font-weight: 600; }
+
+/* ---------------- KEYBOARD FOCUS ---------------- */
+a:focus-visible, button:focus-visible, .nav__toggle:focus-visible {
+  outline: 2px solid var(--coral-deep); outline-offset: 3px; border-radius: 3px;
+}

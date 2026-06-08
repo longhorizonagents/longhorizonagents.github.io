@@ -6,7 +6,7 @@ document.documentElement.classList.add('js');
 const PEOPLE = {
   speakers: [
     { name: 'Yilun Du',       aff: 'Assistant Professor, Harvard University',       photo: 'yilun-du',       home: 'https://yilundu.github.io/' },
-    { name: 'Zifan Wang',     aff: 'Meta, London',                                  photo: 'zifan-wang',     home: 'https://zifanw.notion.site/' },
+    { name: 'Zifan Wang',     aff: 'Meta MSL, London',                                  photo: 'zifan-wang',     home: 'https://zifanw.notion.site/' },
     { name: 'Baishakhi Ray',  aff: 'Associate Professor, Columbia University',      photo: 'baishakhi-ray',  home: 'https://www.rayb.info/' },
     { name: 'James Zou',      aff: 'Associate Professor, Stanford University',      photo: 'james-zou',      home: 'https://www.james-zou.com/' },
     { name: 'Luyu Gao',       aff: 'OpenAI',                                        photo: 'luyu-gao',       home: 'https://luyug.github.io/' },
@@ -21,7 +21,7 @@ const PEOPLE = {
     { name: 'Mingchen Zhuge', aff: 'Recursive',                       area: 'Code generation: MetaGPT, GPTSwarm, agent-as-a-judge, Neural Computers', photo: 'mingchen-zhuge', home: 'https://metauto.ai/' },
     { name: 'Jian Yang',      aff: '',                                area: 'Qwen-Coder · multi-agent systems',                       photo: 'jian-yang',      home: 'https://csjianyang.github.io/' },
     { name: 'Hanqi Yan',      aff: "King's College London",          area: 'CoT compression · agentic evaluation & safety',          photo: 'hanqi-yan',      home: 'https://hanqi-qi.github.io/' },
-    { name: 'Zhuofeng Li',    aff: 'Texas A&M · Stanford (visiting)', area: 'Post-training · RL infrastructure · agent evaluation',    photo: 'zhuofeng-li',    home: 'https://zhuofeng-li.github.io/' },
+    { name: 'Zhuofeng Li',    aff: 'Texas A&amp;M · Stanford (visiting)', area: 'Post-training · RL infrastructure · agent evaluation',    photo: 'zhuofeng-li',    home: 'https://zhuofeng-li.github.io/' },
   ],
   advisors: [
     { name: 'Wenhu Chen',     aff: 'Meta MSL · Univ. of Waterloo',    area: 'Multimodal pre-training & evaluation',                   photo: 'wenhu-chen',     home: 'https://wenhuchen.github.io/' },
